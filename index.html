@@ -3,12 +3,24 @@
 <head>
 	<meta charset="utf-8">
 	<title>My HTML File</title>
-	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="build/bundle.min.css">
 	<script src="build/bundle.js"></script>
 </head>
 <body>
-	<div ui-view></div>
-	<a ui-sref="state1">State 1</a>
-	<a ui-sref="state2">State 2</a>
+	<header>
+		<md-content>
+			<md-toolbar>
+				<h2 class="md-toolbar-tools">
+					<span>Design Paradigm Browser</span>
+				</h2>
+			</md-toolbar>
+		</md-content>
+	</header>
+	<main>
+		<div ui-view></div>
+	</main>
+	<footer>
+		@Copyright Jim-Y
+	</footer>
 </body>
 </html>

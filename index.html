@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="dpbrowserApp">
+<html lang="en" ng-app="dpbApp">
 <head>
 	<meta charset="utf-8">
 	<title>My HTML File</title>
@@ -7,20 +7,10 @@
 	<script src="build/bundle.js"></script>
 </head>
 <body>
-	<header>
-		<md-content>
-			<md-toolbar>
-				<h2 class="md-toolbar-tools">
-					<span>Design Paradigm Browser</span>
-				</h2>
-			</md-toolbar>
-		</md-content>
-	</header>
+	<header my-header></header>
 	<main>
 		<div ui-view></div>
 	</main>
-	<footer>
-		@Copyright Jim-Y
-	</footer>
+	<footer my-footer></footer>
 </body>
 </html>
